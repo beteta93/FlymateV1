@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/*Loading */
+svg{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display:inline-block;
+
+}
+
+
+/*Animaciones */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

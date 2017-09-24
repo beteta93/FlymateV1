@@ -1,0 +1,117 @@
+<!-- Header -->
+<header id="header" class="slider-item animated fadeIn"
+	style="background-image: url('assets/images/fondoAbout.jpg')">
+	<div class="inner-intro">
+		<h2 class="section-title">CONTACTO</h2>
+	</div>
+
+</header>
+
+<section class="section-wrapper contact-and-map animated fadeIn">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2 class="section-title">Envianos un email</h2>
+				<div class="form">
+					<div class="input-group">
+						<input class="form-control border-radius border-right" type="text"
+							placeholder="Nombre" required> <span
+							class="input-group-addon  border-radius custom-addon"> <i
+							class="ion-person"></i>
+						</span>
+					</div>
+					<div class="input-group">
+						<input class="form-control border-radius border-right"
+							name="email" type="Email" placeholder="Email address" required>
+						<span class="input-group-addon  border-radius custom-addon">
+							<i class="ion-email"></i>
+						</span>
+					</div>
+					<div class="input-group">
+						<input class="form-control border-radius border-right" type="tel"
+							placeholder="Numero de telefono"> <span
+							class="input-group-addon  border-radius custom-addon"> <i
+							class="ion-ios-telephone"></i>
+						</span>
+					</div>
+					<div class="input-group">
+						<textarea class="form-control border-radius border-right" rows="8"
+							placeholder="Tu mensaje"></textarea>
+						<!-- <input type="text" name="text" rows="8" class="form-control border-radius border-right message" placeholder="Write Message"> -->
+						<span class="input-group-addon border-radius custom-addon">
+							<i class="ion-chatbubbles"></i>
+						</span>
+					</div>
+					<button type="submit"
+						class="btn btn-default border-radius custom-button">ENVIAR
+					</button>
+				</div>
+			</div>
+			<!-- /.col-sm-6 -->
+			<div class="col-sm-6">
+
+				<h2 class="section-title">Encuentranos Google Map</h2>
+				<!-- 				<div id="googleMap"></div> -->
+				<!-- this creates a google map on the page with the given lat/lng from -->
+				<!-- the component as the initial center of the map: -->
+				<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom"> <agm-marker
+					[latitude]="lat" [longitude]="lng" >
+
+					</agm-marker>
+				</agm-map>
+
+			</div>
+			<!-- /.col-sm-6 -->
+		</div>
+	</div>
+</section>
+
+
+
+<section class="contacts section-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="contact">
+					<div class="contact-icon">
+						<i class="ion-android-map"></i>
+					</div>
+					<div class="contact-name">Direcci&oacute;n</div>
+					<div class="contact-detail">Edificio Insur, Calle Albert
+						Einstein, s/n, 41092 Sevilla, Espa&ntilde;a.</div>
+				</div>
+				<!-- /.contact -->
+			</div>
+			<!-- /.col-sm-4 -->
+			<div class="col-sm-4">
+				<div class="contact">
+					<div class="contact-icon">
+						<i class="ion-ios-telephone"></i>
+					</div>
+					<div class="contact-name">Tel&eacute;fono</div>
+					<div class="contact-detail">
+						+34 635 762 551 <br> +34 687 913 312
+					</div>
+				</div>
+				<!-- /.contact -->
+			</div>
+			<!-- /.col-sm-4 -->
+			<div class="col-sm-4">
+				<div class="contact">
+					<div class="contact-icon">
+						<i class="ion-email"></i>
+					</div>
+					<div class="contact-name">Email</div>
+					<div class="contact-detail">
+						soporte@flymate.es <br> <br>
+					</div>
+				</div>
+				<!-- /.contact -->
+			</div>
+			<!-- /.col-sm-4 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</section>
+<!-- /.contacts -->

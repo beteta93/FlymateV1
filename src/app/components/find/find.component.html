@@ -1,0 +1,192 @@
+<!-- <!-- Home --> -->
+<!-- 		<div id="header"> -->
+<!-- 		    <div class="flexslider"> -->
+<!-- 		        <ul class="slides"> -->
+<!-- 		            <li class="slider-item" style="background-image: url('assets/images/item-1.png')"> -->
+<!-- 		                <div class="intro container"> -->
+<!-- 		                    <div class="inner-intro"> -->
+<!-- 		                        <h1 class="header-title"> -->
+<!-- 		                            <span>traveling</span> always "good idea" -->
+<!-- 		                        </h1> -->
+<!-- 		                        <p class="header-sub-title"> -->
+<!-- 		                            it leaves you speecless, then turns your into a storyteller. -->
+<!-- 		                        </p> -->
+<!-- 		                        <button class="btn custom-btn"> -->
+<!-- 		                            book now -->
+<!-- 		                        </button> -->
+<!-- 		                    </div> -->
+<!-- 		                </div> -->
+<!-- 		            </li> /.slider-item -->
+<!-- 		            <li class="slider-item" style="background-image: url('assets/images/item-2.png')"> -->
+<!-- 		                <div class="intro"> -->
+<!-- 		                    <div class="inner-intro"> -->
+<!-- 		                        <h1 class="header-title"> -->
+<!-- 		                            to <span>travel</span> is to <span>live</span> -->
+<!-- 		                        </h1> -->
+<!-- 		                        <p class="header-sub-title"> -->
+<!-- 		                            it leaves you speecless, then turns your into a storyteller. -->
+<!-- 		                        </p> -->
+<!-- 		                        <button class="btn custom-btn"> -->
+<!-- 		                            book now -->
+<!-- 		                        </button> -->
+<!-- 		                    </div> -->
+<!-- 		                </div> -->
+<!-- 		            </li> /.slider-item -->
+<!-- 		        </ul> /.slides -->
+<!-- 		    </div> /.flexslider -->
+<!-- 		</div> /#header -->
+<!-- <!-- Find a Tour --> -->
+<!-- 	<section class="tour section-wrapper container"> -->
+<!-- 		<h2 class="section-title"> -->
+<!-- 			Find a Tour -->
+<!-- 		</h2> -->
+<!-- 		<p class="section-subtitle"> -->
+<!-- 			Where would you like to go? -->
+<!-- 		</p> -->
+<!-- 		<div class="row"> -->
+<!-- 			<div class="col-md-3 col-sm-6"> -->
+<!-- 				<form role="form" class="form-dropdown"> -->
+<!-- 					<div class="form-group"> -->
+<!-- 						<label for="sel1">Select list (select one):</label> -->
+<!-- 						<select class="form-control border-radius" id="sel1"> -->
+<!-- 							<option>America</option> -->
+<!-- 							<option>Bangladesh</option> -->
+<!-- 							<option>Canada</option> -->
+<!-- 							<option>India</option> -->
+<!-- 						</select> -->
+<!-- 					</div> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
+
+<!-- 			<div class="col-md-3 col-sm-6"> -->
+<!-- 				<div class="input-group"> -->
+<!-- 					<input type="text" class="form-control border-radius border-right" placeholder="Arrival"/> -->
+<!-- 					<span class="input-group-addon border-radius custom-addon"> -->
+<!-- 						<i class="ion-ios-calendar"></i> -->
+<!-- 					</span> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+
+<!-- 			<div class="col-md-3 col-sm-6"> -->
+<!-- 				<div class="input-group"> -->
+<!-- 					<input type="text" class="form-control border-radius border-right" placeholder="Departure"/> -->
+<!-- 					<span class="input-group-addon border-radius custom-addon"> -->
+<!-- 						<i class="ion-ios-calendar"></i> -->
+<!-- 					</span> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+
+<!-- 			<div class="col-md-3 col-sm-6"> -->
+<!-- 				<div class="btn btn-default border-radius custom-button"> -->
+<!-- 					Search -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 	</section> /.tour -->
+
+
+
+<!-- Header -->
+	<header id="header" class="animated fadeIn" style="background-image: url('assets/images/bannerSi.jpg')">
+		<div class="inner-intro" >
+		<h1 class="header-title">
+		       <span>Packs de vuelo mas hotel</span>
+		   </h1>
+		   <p class="header-sub-title">
+		      150, 200 y 250€ por persona
+		   </p>
+				<a href="#comenzamos">
+		   <button class="btn custom-btn2">
+		     Reservar
+		   </button>
+			 </a>
+
+		</div>
+	</header>
+
+<!-- Find a Tour -->
+	<section id="comenzamos" class="tour section-wrapper container animated fadeIn">
+		<h2 class="section-title">
+			¿Comenzamos?
+		</h2>
+		<p class="section-subtitle">
+			Let&rsquo;s fly away!
+		</p>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<form role="form" class="form-dropdown">
+					<div class="form-group">
+						<label for="sel1">Select list (select one):</label>
+						<select class="form-control border-radius" id="sel1">
+							<option>M&aacute;laga</option>
+							<option>Madrid</option>
+							<option>Barcelona</option>
+							<option>Sevilla</option>
+						</select>
+					</div>
+				</form>
+			</div>
+
+
+		  <form [formGroup]="myForm">
+		      <div class="col-md-3 col-sm-6">
+						<div class="input-group">
+		      <input type="text" class="form-control border-radius border-right " placeholder="Fecha ida y vuelta" bsDaterangepicker formControlName="range" />
+					<span class="input-group-addon border-radius custom-addon">
+						<i class="ion-ios-calendar"></i>
+
+					</span>
+					</div>
+
+    	</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+			 	 <label class="input-group-addon border-radius custom-addon1 btn btn-sample" [class.active]="myForm.value.radioModelIda"
+								formControlName="ida1"
+								[(ngModel)]="radioModelIda"
+				 				btnRadio="ida1">06:00-18:00</label>
+
+				 <label class="input-group-addon border-radius custom-addon1 btn btn-sample" [class.active]="myForm.value.radioModelIda"
+								formControlName="ida2"
+								[(ngModel)]="radioModelIda"
+								btnRadio="ida2">18:00-00:00</label>
+
+								<span class="input-group-addon border-radius custom-addon ">
+				 					<i class="ion-plane"></i>
+			      					</span>
+			 </div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+		 		<div class="input-group">
+				 <label class="input-group-addon border-radius custom-addon1 btn btn-sample" [class.active]="myForm.value.radioModelVuelta"
+								formControlName="vuelta1" [(ngModel)]="radioModelVuelta"
+				   	 	 		 btnRadio="vuelta1">06:00-18:00</label>
+
+				 <label class="input-group-addon border-radius custom-addon1 btn btn-sample"
+				 			[class.active]="myForm.value.radioModelVuelta"
+					   		formControlName="vuelta2"
+							[(ngModel)]="radioModelVuelta"
+							btnRadio="vuelta2">18:00-00:00</label>
+
+			 				 	<span class="input-group-addon border-radius custom-addon">
+					 				<i class="ion-plane"></i>
+								</span>
+			 </div>
+			</div>
+  		</form>
+
+
+<!-- 				<pre class="card card-block card-header">{{myForm.value | json}}</pre> -->
+
+
+				<a routerLink="/resultados">
+				<button class="btn btn-default border-radius custom-button">
+					Buscar
+				</button>
+				</a>
+
+		</div>
+
+	</section>
